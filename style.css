@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 3rem;
+    background-color: rgb(144 213 144);
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+header p{
+    font-size: 1.8rem;
+}
+
+header nav{
+    width: 50%;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul li,.side-bar ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.bars{
+    display: none;
+    cursor: pointer;
+}
+
+
+.bars .bar{
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    margin: 4px;
+}
+
+.side-bar{
+    height: 100vh;
+    background-color: rgb(159, 240, 159);
+    width: 40%;
+    position: fixed;
+    border-bottom-right-radius: 8px;
+    transform: translateX(-100%);
+    transition: transform 0.7s ease;
+}
+
+.side-bar .close-btn{
+    position: absolute;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    right: 2px;
+    cursor: pointer;
+}
+
+.side-bar .close-btn:hover{
+    background: rgb(13, 151, 13, 0.5);
+}
+
+
+.side-bar ul{
+    padding: 2rem;
+}
+
+.side-bar ul li{
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.side-bar ul li:hover{
+    background-color: rgb(13, 151, 13, 0.5);
+}
+
+.side-bar ul li a{
+    text-decoration: none;
+    color: green;
+    line-height: 3rem;
+}
+
+.hero-section{
+    background: url('images/1748845913172.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    gap: 1.8rem;
+    color: rgb(163, 219, 8);
+    text-align: center;
+}
+
+.hero-section h2{
+    font-size: 2.5rem;
+    
+}
+
+.hero-section p{
+    font-weight: 600;
+}
+
+.benefits-section,.getting-started-section{
+    padding: 3rem;
+}
+
+.benefits-section h2,.getting-started-section h2{
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.benefits-section .benefits{
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+.techniques-section{
+    padding: 2rem;
+    background-color: rgba(178, 238, 144, 0.5);
+}
+
+.techniques-section h2{
+    text-align: center;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.techniques{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.technique-box{
+    width: 300px;
+    background-color: white;
+    height: 150px;
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+}
+
+.technique-box h4{
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.getting-started-section .guide{
+    margin-top: 1.2rem;
+}
+
+.getting-started-section ul li{
+    line-height: 2rem;
+}
+
+@media (max-width: 800px){
+    header{
+        padding: 0 1rem 0 2rem;
+    }
+    nav{
+        display: none;
+    }
+    
+    .bars{
+        display: block;
+    }
+}
+
+@media (max-width: 500px){
+    .hero-section h2{
+        font-size: 2rem;
+    }
+
+    .side-bar{
+        width: 50%;
+    }
+
+    header p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px){
+    .hero-section h2{
+        font-size: 1.7rem;
+    }
+
+    .side-bar{
+        width: 70%;
+    }
+}
+
+@media (max-width: 350px){
+    .hero-section h2{
+        font-size: 1.5rem;
+    }
+
+
+}
